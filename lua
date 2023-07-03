@@ -67,13 +67,13 @@ interactable.__index = interactable
 
 --//Theme
 local theme = getgenv().theme or {
-    BackColor = Color3.fromRGB(40, 0, 40),
-    TopBar = Color3.fromRGB(255, 50, 255),
+    BackColor = Color3.fromRGB(20, 0, 20),
+    TopBar = Color3.fromRGB(255, 120, 255),
 
     UpperContainer = Color3.fromRGB(24, 0, 24),
     InnerContainer = Color3.fromRGB(24, 0, 24),
 
-    InteractableBackground = Color3.fromRGB(45, 45, 58),
+    InteractableBackground = Color3.fromRGB(20, 45, 20),
     InteractableOutline = Color3.fromRGB(100, 100, 100),
 
     Accent = Color3.fromRGB(24, 0, 24), --> Used for hover outlines, selected tab
@@ -92,7 +92,7 @@ local theme = getgenv().theme or {
 do
     function library.init(title, version, id, position, size)
         local position = position or UDim2.new(0.2, 0, 0.2, 0)
-        local size = size or UDim2.new(0, 550, 0, 570)
+        local size = size or UDim2.new(0, 555, 0, 545)
 
         local ScreenGui,MasterContainer = util.new("ScreenGui", { Parent = game:GetService("CoreGui"), Name=id }, {
             util.new("Frame", { --MasterContainer
